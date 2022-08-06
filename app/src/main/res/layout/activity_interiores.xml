@@ -1,0 +1,2721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-38dp"
+        tools:layout_editor_absoluteY="92dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interiores"
+            android:textSize="24dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asientos"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estado" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/piloto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Piloto" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/co_piloto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Co-piloto" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/butaca_intermedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Butaca intermedia" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/butaca_trasera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Butaca trasera" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/reposabrazos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reposabrazos" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/cabeceras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cabeceras" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/control_de_asientos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Control de asientos" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/molduras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Molduras" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sujecciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sujeciones" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/cableados_y_conectores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cableados y conectores" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/otros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Otros" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puertas y/o lienzos fijos"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estado" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tapas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tapas" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/autoparlantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Autoparlantes" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/manijas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Manijas" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/seguros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Seguros" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/elevadores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Elevadores" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/almacenaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Almacenaje" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/control_espejos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Control espejos" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/molduras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Molduras" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sujecciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sujeciones" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/cableados_y_conectores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cableados y conectores" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/otros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Otros" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domo trasero y/o cajuela"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estado" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tapas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tapas" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/autoparlantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Autoparlantes" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/manijas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Manijas" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/molduras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Molduras" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sujecciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sujecciones" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/cableados_y_conectores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cableados y conectores" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/otros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Otros" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luces interiores"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/estado_unidades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estado unidades" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/cableados_y_conectores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cableados y conectores" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sujecciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sujecciones" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tapicerias y alfombrados"
+                    android:textSize="24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Color" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tipo" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estado" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sujecciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sujecciones" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/traslapes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Traslapes" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sellos_au"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AU" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_or"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT" />
+
+                        <RadioButton
+                            android:id="@+id/sellos_rc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RC" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:text="EV"></TextView>
+
+                    <EditText
+                        android:id="@+id/sellos_ev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:digits="012345"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/sellos_observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siguiente" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anterior" />
+
+        </ScrollView>
+
+    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

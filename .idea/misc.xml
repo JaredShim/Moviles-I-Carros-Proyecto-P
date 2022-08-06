@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/emm_m/AndroidStudioProjects/coches/app/src/main/res/layout/activity_generales_motor.xml" value="0.5" />
+        <entry key="..\:/Users/emm_m/AndroidStudioProjects/coches/app/src/main/res/layout/activity_interiores.xml" value="0.3625" />
+        <entry key="..\:/Users/emm_m/AndroidStudioProjects/coches/app/src/main/res/layout/activity_main.xml" value="0.3059340659340659" />
+        <entry key="..\:/Users/emm_m/AndroidStudioProjects/coches/app/src/main/res/layout/activity_upsert_car.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
