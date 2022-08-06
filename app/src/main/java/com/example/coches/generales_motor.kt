@@ -7,5 +7,7 @@ class generales_motor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_generales_motor)
+
+        getSupportActionBar()?.setTitle("Estatus general del Vehiculo");
     }
 }

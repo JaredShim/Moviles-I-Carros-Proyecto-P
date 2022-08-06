@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.coches">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Evaluación de coches antiguos"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Coches">
+        android:theme="@style/Theme.Coches"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".upsertCar"
+            android:name=".createOrUpdateCar"
+            android:exported="false" />
+        <activity
+            android:name=".findCar"
             android:exported="false" />
         <activity
             android:name=".interiores"

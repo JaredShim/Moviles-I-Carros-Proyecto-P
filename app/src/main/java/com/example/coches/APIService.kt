@@ -12,5 +12,5 @@ interface APIService {
     fun getUser(@Url url: String): Call<getUserRes>
 
     @GET
-    fun searchSerie(@Url url: String): Call<searchSerie>
+    fun searchFolio(@Url url: String): Call<searchFolioRes>
 }
