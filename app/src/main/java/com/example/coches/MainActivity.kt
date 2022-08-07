@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                     Log.d("user", "conviertiendo response...")
                     val response = call.body() as getUserRes
                     runOnUiThread {
-                        if(response.status != "200" ){
+                        if(response.status == "200" ){
                             startActivity(upsertCarView)
                         }else{
                             toast()

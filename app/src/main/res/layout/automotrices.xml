@@ -1,0 +1,3908 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".automotrices">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/bieletas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bieletas" />
+
+                <RadioGroup
+                    android:id="@+id/bieletas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/bieletas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/bieletas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/bieletas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/bieletas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/bieletas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/bieletas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/rotulas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rotulas" />
+
+                <RadioGroup
+                    android:id="@+id/rotulas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rotulas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/rotulas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/rotulas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/rotulas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/rotulas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/rotulas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/bomba_de_direccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bomba de dirección" />
+
+                <RadioGroup
+                    android:id="@+id/bomba_de_direccion_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/bomba_de_direccion_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/bomba_de_direccion_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/bomba_de_direccion_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/bomba_de_direccion_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/bomba_de_direccion_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/bomba_de_direccion_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cajas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cajas" />
+
+                <RadioGroup
+                    android:id="@+id/cajas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cajas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cajas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cajas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cajas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cajas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cajas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cableados_y_conectores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cableados y conectores" />
+
+                <RadioGroup
+                    android:id="@+id/cableados_y_conectores_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cableados_y_conectores_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cableados_y_conectores_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/mangueras_y_ductos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mangueras y ductos" />
+
+                <RadioGroup
+                    android:id="@+id/mangueras_y_ductos_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/mangueras_y_ductos_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/mangueras_y_ductos_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/conexiones_hn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Conexiones HN" />
+
+                <RadioGroup
+                    android:id="@+id/conexiones_hn_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/conexiones_hn_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/conexiones_hn_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fugas" />
+
+                <RadioGroup
+                    android:id="@+id/fugas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/fugas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/fugas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/fugas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/soportes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soportes" />
+
+                <RadioGroup
+                    android:id="@+id/soportes_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/soportes_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/soportes_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/soportes_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sujeciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sujeciones" />
+
+                <RadioGroup
+                    android:id="@+id/sujeciones_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/sujeciones_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sujeciones_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/otros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Otros" />
+
+                <RadioGroup
+                    android:id="@+id/otros_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/otros_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/otros_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/otros_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/otros_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/otros_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/otros_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <!--Menú-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suspensión"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/amortiguadores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Amortiguadores" />
+
+                <RadioGroup
+                    android:id="@+id/amortiguadores_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/amortiguadores_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/amortiguadores_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/amortiguadores_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/amortiguadores_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/amortiguadores_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/amortiguadores_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/resortes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Resortes" />
+
+                <RadioGroup
+                    android:id="@+id/resortes_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/resortes_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/resortes_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/resortes_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/resortes_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/resortes_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/resortes_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/bases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bases" />
+
+                <RadioGroup
+                    android:id="@+id/bases_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/bases_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/bases_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/bases_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/bases_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/bases_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/bases_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/brazos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Brazos" />
+
+                <RadioGroup
+                    android:id="@+id/brazos_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/brazos_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/brazos_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/brazos_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/brazos_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/brazos_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/brazos_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/rotulas_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rotulas" />
+
+                <RadioGroup
+                    android:id="@+id/rotulas_s_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rotulas_s_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/rotulas_s_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/rotulas_s_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/rotulas_s_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/rotulas_s_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/rotulas_s_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fijaciones_brazos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fijaciones Brazos" />
+
+                <RadioGroup
+                    android:id="@+id/fijaciones_brazos_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/fijaciones_brazos_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/fijaciones_brazos_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/fijaciones_brazos_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/fijaciones_brazos_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/fijaciones_brazos_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/fijaciones_brazos_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/horquillas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Horquillas" />
+
+                <RadioGroup
+                    android:id="@+id/horquillas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/horquillas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/horquillas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/horquillas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/horquillas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/horquillas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/horquillas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cableados_y_conectores_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cableados y conectores" />
+
+                <RadioGroup
+                    android:id="@+id/cableados_y_conectores_s_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_s_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_s_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_s_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_s_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cableados_y_conectores_s_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cableados_y_conectores_s_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/conexiones_ee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Conexiones E y E" />
+
+                <RadioGroup
+                    android:id="@+id/conexiones_ee_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/conexiones_ee_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/conexiones_ee_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fugas_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fugas" />
+
+                <RadioGroup
+                    android:id="@+id/fugas_s_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/fugas_s_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_s_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_s_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_s_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/fugas_s_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/fugas_s_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/soportes_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soportes" />
+
+                <RadioGroup
+                    android:id="@+id/soportes_s_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/soportes_s_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_s_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_s_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_s_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/soportes_s_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/soportes_s_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/otros_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Otros" />
+
+                <RadioGroup
+                    android:id="@+id/otros_s_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/otros_s_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/otros_s_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/otros_s_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/otros_s_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/otros_s_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/otros_s_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <!--menu-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chassis"
+                android:textSize="24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/largeros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Largeros" />
+
+                <RadioGroup
+                    android:id="@+id/largeros_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/largeros_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/largeros_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/largeros_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/largeros_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/largeros_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/largeros_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/travesanos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Travesaños" />
+
+                <RadioGroup
+                    android:id="@+id/travesanos_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/travesanos_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/travesanos_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/travesanos_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/travesanos_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/travesanos_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/travesanos_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/soportes_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soportes" />
+
+                <RadioGroup
+                    android:id="@+id/soportes_c_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/soportes_c_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_c_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_c_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_c_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/soportes_c_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/soportes_c_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sujeciones_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sujeciones" />
+
+                <RadioGroup
+                    android:id="@+id/sujeciones_c_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_c_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_c_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_c_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_c_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/sujeciones_c_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sujeciones_c_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/acoplamientos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Acoplamientos" />
+
+                <RadioGroup
+                    android:id="@+id/acoplamientos_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/acoplamientos_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/acoplamientos_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/acorazados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Acorazados" />
+
+                <RadioGroup
+                    android:id="@+id/acorazados_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/acorazados_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/acorazados_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/acorazados_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/acorazados_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/acorazados_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/acorazados_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/empalmes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Empalmes" />
+
+                <RadioGroup
+                    android:id="@+id/empalmes_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/empalmes_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/empalmes_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/empalmes_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/empalmes_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/empalmes_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/empalmes_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <!--Menu-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frenos"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/discos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Discos" />
+
+                <RadioGroup
+                    android:id="@+id/discos_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/discos_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/discos_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/discos_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/discos_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/discos_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/discos_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tambores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tambores" />
+
+                <RadioGroup
+                    android:id="@+id/tambores_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tambores_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/tambores_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/tambores_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/tambores_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/tambores_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/tambores_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/guardas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Guardas" />
+
+                <RadioGroup
+                    android:id="@+id/guardas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/guardas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/guardas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/guardas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/guardas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/guardas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/guardas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/bases_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bases" />
+
+                <RadioGroup
+                    android:id="@+id/bases_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/bases_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/bases_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/bases_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/bases_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/bases_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/bases_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/bomba_principal_de_freno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bomba principal de freno" />
+
+                <RadioGroup
+                    android:id="@+id/bomba_principal_de_frino_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/bomba_principal_de_freno_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/bomba_principal_de_freno_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/bomba_principal_de_freno_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/bomba_principal_de_freno_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/bomba_principal_de_freno_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/bomba_principal_de_freno_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cilindros_de_rueda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cilindros de rueda" />
+
+                <RadioGroup
+                    android:id="@+id/cilindros_de_rueda_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cilindros_de_rueda_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cilindros_de_rueda_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cilindros_de_rueda_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cilindros_de_rueda_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cilindros_de_rueda_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cilidros_de_rueda_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/mangueras_y_ductos_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mangueras y ductos" />
+
+                <RadioGroup
+                    android:id="@+id/mangueras_y_ductos_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/mangueras_y_ductos_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/mangueras_y_ductos_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/mangueras_y_ductos_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/conexiones_hn_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Conexiones H y N" />
+
+                <RadioGroup
+                    android:id="@+id/conexiones_hn_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_hn_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/conexiones_hn_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/conexiones_hn_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fugas_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fugas" />
+
+                <RadioGroup
+                    android:id="@+id/fugas_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/fugas_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/fugas_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/fugas_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/soportes_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soportes" />
+
+                <RadioGroup
+                    android:id="@+id/soportes_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/soportes_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/soportes_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/soportes_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sujeciones_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sujeciones" />
+
+                <RadioGroup
+                    android:id="@+id/sujeciones_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/sujeciones_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sujeciones_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/otros_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Otros" />
+
+                <RadioGroup
+                    android:id="@+id/otros_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/otros_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/otros_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/otros_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/otros_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/otros_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/otros_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <!--Menu-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Con control electronico"
+                android:textSize="24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/modulos_abs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Modulos ABS" />
+
+                <RadioGroup
+                    android:id="@+id/modulos_abs_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/modulos_abs_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/modulos_abs_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/modulos_abs_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/modulos_abs_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/modulos_abs_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/modulos_abs_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sensores_abs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sensores ABS" />
+
+                <RadioGroup
+                    android:id="@+id/sensores_abs_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sensores_abs_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/sensores_abs_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/sensores_abs_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/sensores_abs_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/sensores_abs_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sensores_abs_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cableados_y_conectores_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cableados y Conectores" />
+
+                <RadioGroup
+                    android:id="@+id/cableados_y_conectores_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cableados_y_conectores_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cableados_y_conectores_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/conexiones_ee_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Conexiones E y E" />
+
+                <RadioGroup
+                    android:id="@+id/conexiones_ee_f_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_f_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_f_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_f_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_f_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/conexiones_ee_f_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/conexiones_ee_f_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <!---Menu-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transmision"
+                android:textSize="24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cajas_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cajas" />
+
+                <RadioGroup
+                    android:id="@+id/cajas_t_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cajas_t_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cajas_t_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cajas_t_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cajas_t_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cajas_t_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cajas_t_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/diferenciales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Diferenciales" />
+
+                <RadioGroup
+                    android:id="@+id/diferenciales_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diferenciales_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/diferenciales_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/diferenciales_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/diferenciales_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/diferenciales_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/diferenciales_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/flechas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Flechas" />
+
+                <RadioGroup
+                    android:id="@+id/flechas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/flechas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/flechas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/flechas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/flechas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/flechas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/flechas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/crucetas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Crucetas" />
+
+                <RadioGroup
+                    android:id="@+id/crucetas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/crucetas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/crucetas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/crucetas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/crucetas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/crucetas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/crucetas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cardanes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cardanes" />
+
+                <RadioGroup
+                    android:id="@+id/cardanes_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cardanes_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cardanes_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cardanes_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cardanes_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cardanes_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cardanes_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/acoplamientos_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Acoplamientos" />
+
+                <RadioGroup
+                    android:id="@+id/acoplamientos_t_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_t_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_t_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_t_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/acoplamientos_t_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/acoplamientos_t_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/acoplamientos_t_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cubrepolvos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cubreolvos" />
+
+                <RadioGroup
+                    android:id="@+id/cubrepolvos_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cubrepolvos_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cubrepolvos_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cubrepolvos_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cubrepolvos_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cubrepolvos_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cubrepolvos_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fugas_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fugas" />
+
+                <RadioGroup
+                    android:id="@+id/fugas_t_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/fugas_t_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_t_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_t_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/fugas_t_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/fugas_t_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/fugas_t_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/soportes_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Soportes" />
+
+                <RadioGroup
+                    android:id="@+id/soportes_t_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/soportes_t_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_t_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_t_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/soportes_t_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/soportes_t_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/soportes_t_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sujeciones_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sujecion" />
+
+                <RadioGroup
+                    android:id="@+id/sujeciones_t_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_t_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_t_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_t_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/sujeciones_t_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/sujeciones_t_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sujeciones_t_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/otros_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Otros" />
+
+                <RadioGroup
+                    android:id="@+id/otros_t_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/otros_t_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/otros_t_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/otros_t_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/otros_t_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/otros_t_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/otros_t_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <!--Menu-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Con Control Electronico"
+                android:textSize="24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sensores_vss_vas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sensores VSS, VAS" />
+
+                <RadioGroup
+                    android:id="@+id/sensores_vss_vas_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sensores_vss_vas_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/sensores_vss_vas_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/sensores_vss_vas_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/sensores_vss_vas_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/sensores_vss_vas_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sensores_vss_vas_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cableados_y_conectores_cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cableados y Conectores" />
+
+                <RadioGroup
+                    android:id="@+id/cableados_y_conectores_cc_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_cc_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_cc_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_cc_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/cableados_y_conectores_cc_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/cableados_y_conectores_cc_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/cableados_y_conectores_cc_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/conexiones_ee_cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Conexiones E y E"/>
+
+                <RadioGroup
+                    android:id="@+id/conexiones_ee_cc_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_cc_au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AU" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_cc_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_cc_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RT" />
+
+                    <RadioButton
+                        android:id="@+id/conexiones_ee_cc_rc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RC" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="EV"></TextView>
+
+                <EditText
+                    android:id="@+id/conexiones_ee_cc_ev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:digits="012345"
+                    android:maxLength="1"
+                    android:hint="0"
+                    android:inputType="number" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/conexiones_ee_cc_observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"/>
+
+            <!--Aqui-->
+<!--            <EditText-->
+<!--                android:id="@+id/conexiones_observaciones"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="text|textMultiLine"-->
+<!--                android:gravity="top"/>-->
+            <!--Termina celda-->
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siguiente" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anterior" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

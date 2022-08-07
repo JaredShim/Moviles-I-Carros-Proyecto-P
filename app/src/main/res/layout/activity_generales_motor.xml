@@ -38,6 +38,7 @@
                     android:text="Sellos" />
 
                 <RadioGroup
+                    android:id="@+id/group_sellos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -102,6 +103,7 @@
                     android:text="Adhesivos" />
 
                 <RadioGroup
+                    android:id="@+id/group_juntas_adhesivos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -1767,15 +1769,15 @@
                 android:inputType="text|textMultiLine"
                 android:gravity="top"/>
             <Button
-                android:id="@+id/back"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Anterior" />
-            <Button
                 android:id="@+id/next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Siguiente" />
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anterior" />
         </LinearLayout>
     </ScrollView>
 

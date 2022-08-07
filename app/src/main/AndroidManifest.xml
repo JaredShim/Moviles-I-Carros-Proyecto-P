@@ -13,13 +13,19 @@
         android:theme="@style/Theme.Coches"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".carroceria"
+            android:exported="false" />
+        <activity
+            android:name=".automotrices"
+            android:exported="false" />
+        <activity
+            android:name=".interiores"
+            android:exported="false" />
+        <activity
             android:name=".createOrUpdateCar"
             android:exported="false" />
         <activity
             android:name=".findCar"
-            android:exported="false" />
-        <activity
-            android:name=".interiores"
             android:exported="false" />
         <activity
             android:name=".generales_motor"

@@ -4,21 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".interiores">
 
 
-    <!--<LinearLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="-38dp"
-        tools:layout_editor_absoluteY="92dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Interiores"
-            android:textSize="24dp"/>
+        android:orientation="vertical">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -28,7 +21,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -42,7 +36,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/estado"
+                        android:id="@+id/asientos_estado"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -54,25 +48,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_estado_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_estado_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_estado_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_estado_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -85,7 +79,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_estado_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -96,7 +90,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_estado_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -108,7 +102,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/piloto"
+                        android:id="@+id/asientos_piloto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -120,25 +114,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_piloto_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_piloto_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_piloto_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_piloto_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -151,7 +145,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_piloto_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -162,7 +156,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_piloto_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -174,7 +168,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/co_piloto"
+                        android:id="@+id/asientos_co_piloto"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -186,25 +180,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_co_piloto_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_co_piloto_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_co_piloto_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_co_piloto_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -217,7 +211,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_co_piloto_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -228,7 +222,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_co_piloto_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -240,7 +234,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/butaca_intermedia"
+                        android:id="@+id/asientos_butaca_intermedia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -252,25 +246,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_butaca_intermedia_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_butaca_intermedia_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_butaca_intermedia_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_butaca_intermedia_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -283,7 +277,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_butaca_intermedia_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -294,7 +288,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_butaca_intermedia_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -306,7 +300,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/butaca_trasera"
+                        android:id="@+id/asientos_butaca_trasera"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -318,25 +312,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_butaca_trasera_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_butaca_trasera_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_butaca_trasera_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_butaca_trasera_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -349,7 +343,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_butaca_trasera_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -360,7 +354,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_butaca_trasera_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -372,7 +366,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/reposabrazos"
+                        android:id="@+id/asientos_reposabrazos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -384,25 +378,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_reposabrazos_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_reposabrazos_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_reposabrazos_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_reposabrazos_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -415,7 +409,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_reposabrazos_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -426,7 +420,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_reposabrazos_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -438,7 +432,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/cabeceras"
+                        android:id="@+id/asientos_cabeceras"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -450,25 +444,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_cabeceras_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_cabeceras_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_cabeceras_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_cabeceras_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -481,7 +475,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_cabeceras_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -492,7 +486,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_cabeceras_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -504,7 +498,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/control_de_asientos"
+                        android:id="@+id/asientos_control_de_asientos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -516,25 +510,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_control_de_asientos_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_control_de_asientos_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_control_de_asientos_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_control_de_asientos_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -547,7 +541,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_control_de_asientos_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -558,7 +552,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_control_de_asientos_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -570,7 +564,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/molduras"
+                        android:id="@+id/asientos_molduras"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -582,25 +576,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_molduras_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_molduras_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_molduras_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_molduras_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -613,7 +607,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_molduras_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -624,7 +618,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_molduras_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -636,7 +630,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/sujecciones"
+                        android:id="@+id/asientos_sujecciones"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -648,25 +642,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_sujecciones_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_sujecciones_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_sujecciones_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_sujecciones_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -679,7 +673,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_sujecciones_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -690,7 +684,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_sujecciones_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -702,7 +696,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/cableados_y_conectores"
+                        android:id="@+id/asientos_cableados_y_conectores"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -714,25 +708,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_cableados_y_conectores_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_cableados_y_conectores_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_cableados_y_conectores_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_cableados_y_conectores_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -745,7 +739,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_cableados_y_conectores_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -756,7 +750,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_cableados_y_conectores_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -768,7 +762,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/otros"
+                        android:id="@+id/asientos_otros"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -780,25 +774,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/asientos_otros_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/asientos_otros_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/asientos_otros_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/asientos_otros_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -811,7 +805,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/asientos_otros_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -822,7 +816,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/asientos_otros_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -840,7 +834,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/estado"
+                        android:id="@+id/puertas_estado"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -852,25 +846,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_estado_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_estado_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_estado_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_estado_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -883,7 +877,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_estado_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -894,7 +888,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_estado_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -906,7 +900,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/tapas"
+                        android:id="@+id/puertas_tapas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -918,25 +912,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_tapas_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_tapas_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_tapas_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_tapas_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -949,7 +943,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_tapas_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -960,7 +954,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_tapas_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -972,7 +966,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/autoparlantes"
+                        android:id="@+id/puertas_autoparlantes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -984,25 +978,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_autoparlantes_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_autoparlantes_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_autoparlantes_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_autoparlantes_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1015,7 +1009,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_autoparlantes_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1026,7 +1020,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_autoparlantes_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1038,7 +1032,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/manijas"
+                        android:id="@+id/puertas_manijas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1050,25 +1044,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_manijas_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_manijas_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_manijas_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_manijas_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1081,7 +1075,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_manijas_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1092,7 +1086,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_manijas_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1104,7 +1098,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/seguros"
+                        android:id="@+id/puertas_seguros"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1116,25 +1110,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_seguros_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_seguros_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_seguros_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_seguros_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1147,7 +1141,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_seguros_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1158,7 +1152,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_seguros_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1170,7 +1164,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/elevadores"
+                        android:id="@+id/puertas_elevadores"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1182,25 +1176,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_elevadores_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_elevadores_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_elevadores_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_elevadores_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1213,7 +1207,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_elevadores_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1224,7 +1218,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_elevadores_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1236,7 +1230,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/almacenaje"
+                        android:id="@+id/puertas_almacenaje"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1248,25 +1242,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_almacenaje_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_almacenaje_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_almacenaje_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_almacenaje_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1279,7 +1273,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_almacenaje_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1290,7 +1284,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_almacenaje_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1302,7 +1296,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/control_espejos"
+                        android:id="@+id/puertas_control_espejos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1314,25 +1308,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_control_espejos_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_control_espejos_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_control_espejos_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_control_espejos_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1345,7 +1339,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_control_espejos_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1356,7 +1350,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_control_espejos_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1368,7 +1362,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/molduras"
+                        android:id="@+id/puertas_molduras"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1380,25 +1374,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_molduras_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_molduras_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_molduras_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_molduras_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1411,7 +1405,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_molduras_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1422,7 +1416,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_molduras_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1434,7 +1428,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/sujecciones"
+                        android:id="@+id/puertas_sujecciones"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1446,25 +1440,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_sujecciones_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_sujecciones_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_sujecciones_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_sujecciones_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1477,7 +1471,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_sujecciones_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1488,7 +1482,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_sujecciones_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1500,7 +1494,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/cableados_y_conectores"
+                        android:id="@+id/puertas_cableados_y_conectores"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1512,25 +1506,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_cableados_y_conectores_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_cableados_y_conectores_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_cableados_y_conectores_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_cableados_y_conectores_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1543,7 +1537,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_cableados_y_conectores_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1554,7 +1548,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_cableados_y_conectores_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1566,7 +1560,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/otros"
+                        android:id="@+id/puertas_otros"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1578,25 +1572,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/puertas_otros_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/puertas_otros_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/puertas_otros_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/puertas_otros_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1609,7 +1603,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/puertas_otros_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1620,7 +1614,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/puertas_otros_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1638,7 +1632,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/estado"
+                        android:id="@+id/domo_estado"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1650,25 +1644,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_estado_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_estado_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_estado_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_estado_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1681,7 +1675,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_estado_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1692,7 +1686,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_estado_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1704,7 +1698,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/tapas"
+                        android:id="@+id/domo_tapas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1716,25 +1710,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_tapas_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_tapas_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_tapas_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_tapas_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1747,7 +1741,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_tapas_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1758,7 +1752,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_tapas_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1770,7 +1764,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/autoparlantes"
+                        android:id="@+id/domo_autoparlantes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1782,25 +1776,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_autoparlantes_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_autoparlantes_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_autoparlantes_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_autoparlantes_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1813,7 +1807,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_autoparlantes_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1824,7 +1818,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_autoparlantes_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1836,7 +1830,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/manijas"
+                        android:id="@+id/domo_manijas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1848,25 +1842,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_manijas_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_manijas_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_manijas_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_manijas_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1879,7 +1873,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_manijas_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1890,7 +1884,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_manijas_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1902,7 +1896,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/molduras"
+                        android:id="@+id/domo_molduras"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1914,25 +1908,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_molduras_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_molduras_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_molduras_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_molduras_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -1945,7 +1939,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_molduras_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -1956,7 +1950,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_molduras_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -1968,7 +1962,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/sujecciones"
+                        android:id="@+id/domo_sujecciones"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -1980,25 +1974,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_sujecciones_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_sujecciones_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_sujecciones_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_sujecciones_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2011,7 +2005,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_sujecciones_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2022,7 +2016,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_sujecciones_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2034,7 +2028,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/cableados_y_conectores"
+                        android:id="@+id/domo_cableados_y_conectores"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2046,25 +2040,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_cableados_y_conectores_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_cableados_y_conectores_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_cableados_y_conectores_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_cableados_y_conectores_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2077,7 +2071,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_cableados_y_conectores_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2088,7 +2082,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_cableados_y_conectores_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2100,7 +2094,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/otros"
+                        android:id="@+id/domo_otros"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2112,25 +2106,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/domo_otros_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/domo_otros_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/domo_otros_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/domo_otros_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2143,7 +2137,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/domo_otros_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2154,7 +2148,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/domo_otros_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2172,7 +2166,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/estado_unidades"
+                        android:id="@+id/luces_estado_unidades"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2184,25 +2178,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/luces_estado_unidades_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/luces_estado_unidades_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/luces_estado_unidades_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/luces_estado_unidades_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2215,7 +2209,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/luces_estado_unidades_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2226,7 +2220,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/luces_estado_unidades_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2238,7 +2232,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/cableados_y_conectores"
+                        android:id="@+id/luces_cableados_y_conectores"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2250,25 +2244,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/luces_cableados_y_conectores_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/luces_cableados_y_conectores_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/luces_cableados_y_conectores_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/luces_cableados_y_conectores_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2281,7 +2275,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/luces_cableados_y_conectores_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2292,7 +2286,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/luces_cableados_y_conectores_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2304,7 +2298,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/sujecciones"
+                        android:id="@+id/luces_sujecciones"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2316,25 +2310,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/luces_sujecciones_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/luces_sujecciones_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/luces_sujecciones_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/luces_sujecciones_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2347,7 +2341,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/luces_sujecciones_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2358,7 +2352,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/luces_sujecciones_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2376,7 +2370,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/color"
+                        android:id="@+id/luces_tapicerias_color"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2388,25 +2382,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/tapicerias_color_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/tapicerias_color_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/tapicerias_color_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/tapicerias_color_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2419,7 +2413,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/tapicerias_color_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2430,7 +2424,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/_tapicerias_color_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2442,7 +2436,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/tipo"
+                        android:id="@+id/tapicerias_tipo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2454,25 +2448,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/tapicerias_tipo_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/tapicerias_tipo_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/tapicerias_tipo_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/tapicerias_tipo_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2485,7 +2479,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/tapicerias_tipo_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2496,7 +2490,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/tapicerias_tipo_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2508,7 +2502,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/estado"
+                        android:id="@+id/tapicerias_estado"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2520,25 +2514,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/tapicerias_estado_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/tapicerias_estado_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/tapicerias_estado_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/tapicerias_estado_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2551,7 +2545,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/tapicerias_estado_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2562,7 +2556,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/tapicerias_estado_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2574,7 +2568,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/sujecciones"
+                        android:id="@+id/tapicerias_sujecciones"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2586,25 +2580,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/tapicerias_sujecciones_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/tapicerias_sujecciones_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/tapicerias_sujecciones_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/tapicerias_sujecciones_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2617,7 +2611,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/tapicerias_sujecciones_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2628,7 +2622,7 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/tapicerias_sujecciones_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
@@ -2640,7 +2634,7 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/traslapes"
+                        android:id="@+id/tapicerias_traslapes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -2652,25 +2646,25 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/sellos_au"
+                            android:id="@+id/tapicerias_traslapes_au"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AU" />
 
                         <RadioButton
-                            android:id="@+id/sellos_or"
+                            android:id="@+id/tapicerias_traslapes_or"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OR" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rt"
+                            android:id="@+id/tapicerias_traslapes_rt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RT" />
 
                         <RadioButton
-                            android:id="@+id/sellos_rc"
+                            android:id="@+id/tapicerias_traslapes_rc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="RC" />
@@ -2683,7 +2677,7 @@
                         android:text="EV"></TextView>
 
                     <EditText
-                        android:id="@+id/sellos_ev"
+                        android:id="@+id/tapicerias_traslapes_ev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="012345"
@@ -2694,28 +2688,27 @@
                 </LinearLayout>
 
                 <EditText
-                    android:id="@+id/sellos_observaciones"
+                    android:id="@+id/tapicerias_traslapes_observaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text|textMultiLine"
                     android:gravity="top"/>
 
+                <Button
+                    android:id="@+id/interiores_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Siguiente" />
+
+                <Button
+                    android:id="@+id/interiores_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Anterior" />
+
             </LinearLayout>
-
-            <Button
-                android:id="@+id/next"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Siguiente" />
-
-            <Button
-                android:id="@+id/back"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Anterior" />
 
         </ScrollView>
 
-    </LinearLayout>-->
-
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
